@@ -5,6 +5,7 @@ const studentSchema = mongoose.Schema({
         type: String,
         required: [true, 'Please Enter Student Name'],
         trim: true,
+        minLength:[4,'Please put the atlest 4 Character']
     },
     email_id: {
         type: String,
